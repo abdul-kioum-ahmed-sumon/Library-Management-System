@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-.user-login {
-  width: 35px;
-  border-radius: 100%;
-}
-body{
+body {
   font-family: "Open Sans", sans-serif;
   background: #d2e4e2;
 }
@@ -11,4 +7,32 @@ body{
   width: 35px;
   border-radius: 100%;
   margin-right: 10px;
+}
+
+.user-login {
+  width: 35px;
+  border-radius: 100%;
+}
+
+:root {
+  --offcanvas-width: 270px;
+  --topNavbar-height: 56px;
+}
+
+.sidebar-nav {
+  width: var(--offcanvas-width) !important;
+}
+
+@media (min-width: 992px) 
+{
+  .offcanvas-backdrop{
+    display: none !important;
+  }
+  .sidebar-nav {
+    transform: none !important;
+    visibility: visible !important;
+    top: var(--topNavbar-height) !important;
+
+
+  }
 }
