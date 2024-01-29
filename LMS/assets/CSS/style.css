@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.user-login {
+  width: 35px;
+  border-radius: 100%;
+}
+body{
+  font-family: "Open Sans", sans-serif;
+  background: #d2e4e2;
+}
+.BAUST_LOGO {
+  width: 35px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
