@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #fff;
 }
 :root {
   --var-primary-color: #2888e8ff;
@@ -137,8 +136,9 @@ main{
  margin: 1rem 0 .7rem 0;
 }
 .social-icon{
-  display: flex;
-  gap: 1rem ;
+
+  display:flex;
+  gap: 2rem ;
 }
 .fa-brands{
   width: 4rem;

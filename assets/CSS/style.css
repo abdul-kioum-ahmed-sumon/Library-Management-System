@@ -23,16 +23,20 @@ body {
   width: var(--offcanvas-width) !important;
 }
 
-@media (min-width: 992px) 
-{
-  .offcanvas-backdrop{
+.sidebar-link[aria-expanded="true"] .right-icon{
+  transform: rotate(180deg);
+}
+.sidebar-link .right-icon{
+  transition: all 0.5s;
+}
+
+@media (min-width: 992px) {
+  .offcanvas-backdrop {
     display: none !important;
   }
   .sidebar-nav {
     transform: none !important;
     visibility: visible !important;
     top: var(--topNavbar-height) !important;
-
-
   }
 }
