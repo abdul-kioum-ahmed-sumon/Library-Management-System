@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <title>Library Management</title>
     <link rel="stylesheet" href="assets/CSS/style.css" />
     <link rel="icon" href="assets/images/LMS_fabicon.png" />
@@ -20,59 +17,29 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <!--offcanvas trigger start-->
-        <button
-          class="navbar-toggler me-2"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasExample"
-          aria-controls="offcanvasExample"
-        >
+        <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!--offcanvas trigger end-->
-        <a
-          class="navbar-brand text-uppercase fw-bold text-uppercase me-auto"
-          href="#"
-          >Enlightened Library</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand text-uppercase fw-bold text-uppercase me-auto" href="#">Enlightened Library</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <form class="d-flex ms-auto" role="search">
             <div class="input-group my-3 my-lg-0">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Search Books..."
-                aria-describedby="button-addon2"
-              />
-              <button
-                class="btn btn-outline-secondary btn-primary text-white"
-                type="button"
-                id="button-addon2"
-              >
+              <input type="text" class="form-control" placeholder="Search Books..." aria-describedby="button-addon2" />
+              <button class="btn btn-outline-secondary btn-primary text-white" type="button" id="button-addon2">
                 <i class="fa-solid fa-magnifying-glass fa-fade"></i>
               </button>
             </div>
           </form>
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 <img src="assets/images/user-login.png" class="user-login" />
                 Admin
               </a>
@@ -95,12 +62,8 @@
     <!--top navebar  ends-->
 
     <!--Off canvas  start-->
-    <div
-      class="offcanvas offcanvas-start bg-dark text-white sidebar-nav"
-      tabindex="-1"
-      id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel"
-    >
+    <div class="offcanvas offcanvas-start bg-dark text-white sidebar-nav" tabindex="-1" id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-body">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -108,8 +71,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">
-              <i class="fa-solid fa-gauge-high me-2" style="color: #ffd43b"></i
-              >Dashbord
+              <i class="fa-solid fa-gauge-high me-2" style="color: #ffd43b"></i>Dashbord
             </a>
           </li>
 
@@ -124,59 +86,35 @@
           </li>
 
           <li class="nav-item">
-            <a
-              class="nav-link sidebar-link"
-              data-bs-toggle="collapse"
-              href="#booksmgmt"
-              role="button"
-              aria-expanded="false"
-              aria-controls="booksmgmt"
-            >
+            <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#booksmgmt" role="button"
+              aria-expanded="false" aria-controls="booksmgmt">
               <i class="fa-solid fa-book fa-fade me-2"></i>Books Management
-              <span class="right-icon float-end"
-                ><i class="fa-solid fa-chevron-down"></i
-              ></span>
+              <span class="right-icon float-end"><i class="fa-solid fa-chevron-down"></i></span>
             </a>
             <div class="collapse" id="booksmgmt">
               <ul class="navbar-nav ps-3">
                 <li>
-                  <a href="#" class="nav-link"
-                    ><i class="fa-regular fa-square-plus me-2"></i>Add New</a
-                  >
+                  <a href="#" class="nav-link"><i class="fa-regular fa-square-plus me-2"></i>Add New</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-link"
-                    ><i class="fa-solid fa-list-ol me-2"></i>Manage All</a
-                  >
+                  <a href="#" class="nav-link"><i class="fa-solid fa-list-ol me-2"></i>Manage All</a>
                 </li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link sidebar-link"
-              data-bs-toggle="collapse"
-              href="#studentMgmt"
-              role="button"
-              aria-expanded="false"
-              aria-controls="studentMgmt"
-            >
+            <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#studentMgmt" role="button"
+              aria-expanded="false" aria-controls="studentMgmt">
               <i class="fa-solid fa-user fa-fade me-2"></i>Students Management
-              <span class="right-icon float-end"
-                ><i class="fa-solid fa-chevron-down"></i
-              ></span>
+              <span class="right-icon float-end"><i class="fa-solid fa-chevron-down"></i></span>
             </a>
             <div class="collapse" id="studentMgmt">
               <ul class="navbar-nav ps-3">
                 <li>
-                  <a href="#" class="nav-link"
-                    ><i class="fa-regular fa-square-plus me-2"></i>Add New</a
-                  >
+                  <a href="#" class="nav-link"><i class="fa-regular fa-square-plus me-2"></i>Add New</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-link"
-                    ><i class="fa-solid fa-list-ol me-2"></i>Manage All</a
-                  >
+                  <a href="#" class="nav-link"><i class="fa-solid fa-list-ol me-2"></i>Manage All</a>
                 </li>
               </ul>
             </div>
@@ -192,60 +130,36 @@
             </div>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link sidebar-link"
-              data-bs-toggle="collapse"
-              href="#bookloanmgmt"
-              role="button"
-              aria-expanded="false"
-              aria-controls="bookloanmgmt"
-            >
+            <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#bookloanmgmt" role="button"
+              aria-expanded="false" aria-controls="bookloanmgmt">
               <i class="fa-solid fa-lines-leaning fa-beat-fade me-2"></i>Books
               Loan
-              <span class="right-icon float-end"
-                ><i class="fa-solid fa-chevron-down"></i
-              ></span>
+              <span class="right-icon float-end"><i class="fa-solid fa-chevron-down"></i></span>
             </a>
             <div class="collapse" id="bookloanmgmt">
               <ul class="navbar-nav ps-3">
                 <li>
-                  <a href="#" class="nav-link"
-                    ><i class="fa-regular fa-square-plus me-2"></i>Add New</a
-                  >
+                  <a href="#" class="nav-link"><i class="fa-regular fa-square-plus me-2"></i>Add New</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-link"
-                    ><i class="fa-solid fa-list-ol me-2"></i>Manage All</a
-                  >
+                  <a href="#" class="nav-link"><i class="fa-solid fa-list-ol me-2"></i>Manage All</a>
                 </li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link sidebar-link"
-              data-bs-toggle="collapse"
-              href="#SubscriptonMgmt"
-              role="button"
-              aria-expanded="false"
-              aria-controls="SubscriptonMgmt"
-            >
+            <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#SubscriptonMgmt" role="button"
+              aria-expanded="false" aria-controls="SubscriptonMgmt">
               <i class="fa-solid fa-bangladeshi-taka-sign me-2"></i>Subscripton
-              <span class="right-icon float-end"
-                ><i class="fa-solid fa-chevron-down"></i
-              ></span>
+              <span class="right-icon float-end"><i class="fa-solid fa-chevron-down"></i></span>
             </a>
             <div class="collapse" id="SubscriptonMgmt">
               <ul class="navbar-nav ps-3">
                 <li>
-                  <a href="#" class="nav-link"
-                    ><i class="fa-regular fa-square-plus me-2"></i>Plan</a
-                  >
+                  <a href="#" class="nav-link"><i class="fa-regular fa-square-plus me-2"></i>Plan</a>
                 </li>
                 <li>
-                  <a href="#" class="nav-link"
-                    ><i class="fa-solid fa-list-ol me-2"></i>parchech</a
-                  >
+                  <a href="#" class="nav-link"><i class="fa-solid fa-list-ol me-2"></i>parchech</a>
                 </li>
               </ul>
             </div>
@@ -266,14 +180,79 @@
 
     <!--Off canvas  End-->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    <!--Main content start-->
+
+    <main class="mt-1 pt-3">
+      <div class="container-fluid">
+        <!-- cards start-->
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="fw-bold text-uppercase">Dashbord</h2>
+            <p>Statistics of the system!</p>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <h6 class="card-title text-uppercase text-muted">Total books</h6>
+
+                <p class="card-text">
+                <h1>130</h1>
+                <a href="#" class=" card-link link-underline-light">View more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <h6 class="card-title text-uppercase text-muted">Total Students</h6>
+
+                <p class="card-text">
+                <h1>83</h1>
+                <a href="#" class=" card-link link-underline-light">View more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <h6 class="card-title text-uppercase text-muted">Total Revenue</h6>
+
+                <p class="card-text">
+                <h1><i class="fa-solid fa-bangladeshi-taka-sign me-2"></i>84,678</h1>
+                <a href="#" class=" card-link link-underline-light ">View more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <h6 class="card-title text-uppercase text-muted">Total books Loan</h6>
+
+                <p class="card-text">
+                <h1>32</h1>
+                <a href="#" class=" card-link link-underline-light">View more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cards ends-->
+
+
+      </div>
+      </div>
+    </main>
+
+    <!--Main content End-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/c7195a9049.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c7195a9049.js" crossorigin="anonymous"></script>
   </body>
+
 </html>
