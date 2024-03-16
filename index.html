@@ -76,14 +76,14 @@
                 <img src="assets/images/user-login.png" class="user-login" />
                 Admin
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">My Profile</a></li>
+                <li><a class="dropdown-item" href="#">Change Password</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Logout</a>
                 </li>
               </ul>
             </li>
@@ -307,7 +307,9 @@
                   Total Revenue
                 </h6>
                 <p class="card-text"></p>
-                <h1>84,678</h1>
+                <h1>
+                  <i class="fa-solid fa-bangladeshi-taka-sign me-2"></i>84,678
+                </h1>
                 <a href="#" class="card-link link-underline-light">View more</a>
               </div>
             </div>
@@ -334,13 +336,13 @@
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button
-                  class="nav-link text-uppercase active "
-                  id="home-tab"
+                  class="nav-link text-uppercase active"
+                  id="recent-students"
                   data-bs-toggle="tab"
-                  data-bs-target="#home-tab-pane"
+                  data-bs-target="#recent-students-pane"
                   type="button"
                   role="tab"
-                  aria-controls="home-tab-pane"
+                  aria-controls="recent-students-pane"
                   aria-selected="true"
                 >
                   New Students
@@ -349,12 +351,12 @@
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link text-uppercase"
-                  id="profile-tab"
+                  id="recent-loans"
                   data-bs-toggle="tab"
-                  data-bs-target="#profile-tab-pane"
+                  data-bs-target="#recent-loans-pane"
                   type="button"
                   role="tab"
-                  aria-controls="profile-tab-pane"
+                  aria-controls="recent-loans-pane"
                   aria-selected="false"
                 >
                   Recent Loans
@@ -363,54 +365,157 @@
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link text-uppercase"
-                  id="contact-tab"
+                  id="recent-subs"
                   data-bs-toggle="tab"
-                  data-bs-target="#contact-tab-pane"
+                  data-bs-target="#recent-subs-pane"
                   type="button"
                   role="tab"
-                  aria-controls="contact-tab-pane"
+                  aria-controls="recent-subs-pane"
                   aria-selected="false"
                 >
                   Recent Subscripton
                 </button>
-              </li> 
+              </li>
             </ul>
             <div class="tab-content" id="myTabContent">
               <div
                 class="tab-pane fade show active"
-                id="home-tab-pane"
+                id="recent-students-pane"
                 role="tabpanel"
-                aria-labelledby="home-tab"
+                aria-labelledby="recent-students"
                 tabindex="0"
               >
-                ...
+                <table class="table">
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Department</th>
+                      <th scope="col">Registered On</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Abdullah</td>
+                      <td>CSE</td>
+                      <td>19-03-2024, 12:46 PM </td>
+                      <td><span class="badge text-bg-success">Active</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Labib</td>
+                      <td>CSE</td>
+                      <td>19-03-2024, 01:46 PM</td>
+                      <td><span class="badge text-bg-success">Active</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <!-- <td colspan="2">Fahad</td> -->
+
+                      <td>Fahad</td>
+                      <td>BBA</td>
+                      <td>19-03-2024, 02:16 PM</td>
+                      <td><span class="badge text-bg-danger">Inactive</span></td>
+                     
+                    </tr>
+                  </tbody>
+                </table>
               </div>
               <div
                 class="tab-pane fade"
-                id="profile-tab-pane"
+                id="recent-loans-pane"
                 role="tabpanel"
-                aria-labelledby="profile-tab"
+                aria-labelledby="recent-loans"
                 tabindex="0"
               >
-                ...
+               <table class="table">
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Book Name</th>
+                      <th scope="col">Student</th>
+                      <th scope="col">Return Date</th>
+                      <th scope="col">Due Date</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Tech C++</td>
+                      <td>Abdullah</td>
+                      <td>19-03-2024, 12:46 PM </td>
+                      <td>19-03-2024, 12:46 PM </td>
+                      <td><span class="badge text-bg-success">Active</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Schaum's Outline Computer Graphics </td>
+                      <td>Labib</td>
+                      <td>19-03-2024, 01:46 PM</td>
+                      <td>19-03-2024, 01:46 PM</td>
+                      <td><span class="badge text-bg-success">Active</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <!-- <td colspan="2">Fahad</td> -->
+
+                      <td>Business statistics</td>
+                      <td>Fahad</td>
+                      <td>19-03-2024, 02:16 PM</td>
+                      <td>19-03-2024, 02:16 PM</td>
+                      <td><span class="badge text-bg-primary">Returned</span></td>
+                     
+                    </tr>
+                  </tbody>
+                </table>
               </div>
               <div
                 class="tab-pane fade"
-                id="contact-tab-pane"
+                id="recent-subs-pane"
                 role="tabpanel"
-                aria-labelledby="contact-tab"
+                aria-labelledby="recent-subs"
                 tabindex="0"
               >
-                ...
-              </div>
-              <div
-                class="tab-pane fade"
-                id="disabled-tab-pane"
-                role="tabpanel"
-                aria-labelledby="disabled-tab"
-                tabindex="0"
-              >
-                ...
+               <table class="table">
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Department</th>
+                      <th scope="col">Registered On</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Abdullah</td>
+                      <td>CSE</td>
+                      <td>19-03-2024, 12:46 PM </td>
+                      <td><span class="badge text-bg-success">Active</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Labib</td>
+                      <td>CSE</td>
+                      <td>19-03-2024, 01:46 PM</td>
+                      <td><span class="badge text-bg-success">Active</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <!-- <td colspan="2">Fahad</td> -->
+
+                      <td>Fahad</td>
+                      <td>BBA</td>
+                      <td>19-03-2024, 02:16 PM</td>
+                      <td><span class="badge text-bg-danger">Inactive</span></td>
+                     
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
